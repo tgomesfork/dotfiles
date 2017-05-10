@@ -1,0 +1,32 @@
+###
+# Git
+##
+
+alias gs='git status'
+alias ga='git add'
+alias gf='git diff'
+alias gp='git pull'
+alias grh='git reset --hard HEAD'
+alias gcm='git checkout master'
+
+# Undo modified changes to a certain file
+alias gc-='git checkout --'
+
+# Makes a new commit as a fix for the previous commit
+alias gfu='git commit --fixup HEAD && git rebase -i --autosquash'
+
+# Lists modified files of a specific commit
+alias gls='git diff-tree --no-commit-id --name-only -r'
+
+# Push upstream
+alias gpu='git push upstream `git rev-parse --abbrev-ref HEAD`'
+
+# Shows commits on a tree view
+alias glt='git log --graph --oneline --all'
+
+# Save current branch name into a variable. Useful for alias 'gcf'
+alias sb='MY_BRANCH_NAME=`git rev-parse --abbrev-ref HEAD`'
+alias gcf='git checkout $MY_BRANCH_NAME'
+
+# Undo Last Commit and keep the modified files unstaged
+alias gulc='git reset HEAD^ --soft; git reset HEAD .'

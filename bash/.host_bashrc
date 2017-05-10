@@ -1,0 +1,6 @@
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+export WORKSPACE=${THEFORK_WORKSPACE}
+
+source ${WORKSPACE}/aliases/host.aliases
+source ${WORKSPACE}/aliases/thefork.aliases
+source ${WORKSPACE}/aliases/git.aliases

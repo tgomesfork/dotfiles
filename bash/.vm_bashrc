@@ -1,0 +1,5 @@
+export WORKSPACE=/var/www
+
+source ${WORKSPACE}/aliases/vm.aliases
+source ${WORKSPACE}/aliases/thefork.aliases
+source ${WORKSPACE}/aliases/git.aliases

@@ -1,0 +1,23 @@
+###
+# The Fork
+##
+
+# Projects
+alias rr='cd /var/www/lafourchette-rr/; pwd'
+alias bo='cd /var/www/lafourchette-bo/; pwd'
+alias b2b='cd /var/www/lafourchette-b2b/; pwd'
+alias core='cd /var/www/lafourchette-core/; pwd'
+alias portal='cd /var/www/lafourchette-portal/; pwd'
+alias mailer='cd /var/www/lafourchette-mailer/; pwd'
+
+# Cleaning up
+alias findBigLogFiles='sudo find /var -size +100M -name *.log'
+alias findBigFiles='find /var/www/ -size +500M'
+
+# PHP
+alias coverunit='./bin/phpunit --coverage-html=/var/www/codecoverage/`basename "$PWD"`'
+
+# Symfony
+alias validate_js='php app/console assetic:dump --no-debug'
+alias cc='php app/console cache:clear'
+alias pcb='phing configure && phing build'

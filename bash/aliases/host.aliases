@@ -1,0 +1,9 @@
+###
+# Host only aliases
+##
+
+alias vpn='sudo openconnect ${VPN_HOST} --juniper'
+alias vm='cd ${THEFORK_WORKSPACE}/lafourchette-vm-55/ && vagrant up && vagrant ssh'
+
+# To deprecate
+alias ssh_integ7='ssh vagrant@ssh.integ7.lafourchette.io'

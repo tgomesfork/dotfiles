@@ -1,0 +1,11 @@
+###
+# VM only aliases
+##
+
+alias mysupervisor='sudo supervisorctl stop all; sudo supervisorctl start reservation-api reservation-srv restaurant-api restaurant-srv'
+alias project_errorlog='tail -f app/logs/*.log /var/log/nginx/*.err'
+
+# To review
+alias errorlogs='tail -f /var/www/lafourchette-portal/app/logs/*.log /var/www/lafourchette-module/app/logs/*.log /var/www/lafourchette-mailer/app/logs/*.log /var/www/lafourchette-b2c-sponsorship/app/logs/*.log /var/www/lafourchette-core/app/logs/*.log /var/www/lafourchette-rr/app/logs/*.log /var/www/lafourchette-b2c-mobile/app/logs/*.log /var/www/lafourchette-b2b/app/logs/*.log /var/www/lafourchette-b2b-mobile/app/logs/*.log /var/www/lafourchette-bo/app/logs/*.log app/logs/*.log /var/log/nginx/*.err'
+alias accesslogs='tail -f /var/www/lafourchette-portal/app/logs/*.log /var/www/lafourchette-module/app/logs/*.log /var/www/lafourchette-mailer/app/logs/*.log /var/www/lafourchette-b2c-sponsorship/app/logs/*.log /var/www/lafourchette-core/app/logs/*.log /var/www/lafourchette-rr/app/logs/*.log /var/www/lafourchette-b2c-mobile/app/logs/*.log /var/www/lafourchette-b2b/app/logs/*.log /var/www/lafourchette-b2b-mobile/app/logs/*.log /var/www/lafourchette-bo/app/logs/*.log app/logs/*.log /var/log/nginx/*.log'
+alias update_projects='cd /var/www/lafourchette-core/; pwd; git stash; git checkout master; git pull; git stash pop; phing configure; phing build; cd ../lafourchette-bo/; pwd; git stash; git checkout master; git pull; git stash pop; phing configure; phing build; cd ../lafourchette-b2b/; pwd; git stash; git checkout master; git pull; git stash pop; phing configure; phing build; cd ../lafourchette-rr/; pwd; git stash; git checkout master; git pull; git stash pop; phing configure; phing build; /home/vagrant/bin/migrate;'
