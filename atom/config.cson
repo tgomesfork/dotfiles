@@ -1,0 +1,115 @@
+"*":
+  "atom-autocomplete-php":
+    binComposer: "/usr/bin/composer"
+    binPhp: "/usr/bin/php"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "a6cadea1-b0fc-4c68-a4e9-47192fef7605"
+    php:
+      cs_fixer_path: "/usr/bin/php-cs-fixer"
+      default_beautifier: "PHPCBF"
+      phpcbf_path: "/usr/bin/phpcbf"
+      standard: "PSR2"
+  "atom-symfony2": {}
+  core:
+    disabledPackages: [
+      "phpunit"
+      "wrap-guide"
+      "atom-autocomplete-php"
+    ]
+    ignoredNames: [
+      ".git/*"
+      "docs/*"
+      "log/*"
+      "cache/*"
+      ".tags"
+      "tags"
+      "app/cache/*"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  docblockr:
+    spacer_between_sections: true
+  editor:
+    backUpBeforeSaving: true
+    fontSize: 13
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "8d0e8feb-e1cf-d68c-9561-44591f5bc06d"
+  "file-watcher":
+    autoReload: true
+  "fuzzy-finder":
+    preserveLastSearch: true
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-plus":
+    general:
+      _analyticsUserId: "2ea33b98-f5a6-4a4c-a54b-61f1121b843f"
+  "highlight-selected": {}
+  hyperclick:
+    linuxTriggerKeys: "ctrlKey,altKey"
+  linter:
+    lintOnChange: false
+  "linter-php":
+    executablePath: "/usr/bin/php"
+  "linter-phpcs":
+    autoConfigSearch: false
+    autoExecutableSearch: false
+    excludedSniffs: [
+      "Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"
+    ]
+    executablePath: "/usr/bin/phpcs"
+  "linter-phpmd":
+    executablePath: "/usr/bin/phpmd"
+  "linter-ui-default":
+    panelHeight: 266
+    showPanel: true
+  "multi-wrap-guide":
+    columns: [
+      80
+      120
+    ]
+    locked: true
+  "one-dark-ui":
+    fontSize: 13
+  "php-cs-fixer":
+    executablePath: "/usr/bin/php-cs-fixer"
+    phpExecutablePath: "/usr/bin/php"
+    showInfoNotifications: true
+  "php-fmt":
+    configFile: "/home/aalves/.phpfmt.ini"
+    executablePath: "/usr/bin/phpfmt"
+    lintBefore: true
+    phpExecutablePath: "/usr/bin/php"
+    useSpaceIndentation: true
+    visibilityOrder: true
+  "php-getters-setters":
+    generateSettersFirst: true
+  "php-integrator-base":
+    phpCommand: "/usr/bin/php"
+  "php-integrator-linter":
+    showUnknownClasses: false
+  phpcbf:
+    executablePath: "/usr/bin/phpcbf"
+  phpunit:
+    execPath: "/usr/bin/phpunit"
+    runOnSave: true
+  "project-manager": {}
+  welcome:
+    showOnStartup: false
+".html.php.text":
+  editor:
+    preferredLineLength: 120
+  "multi-wrap-guide":
+    columns: [
+      80
+      120
+    ]
